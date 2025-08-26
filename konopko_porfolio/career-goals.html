@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Goals - Tina Konopko</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <h1 class="nav-name">Career Goals</h1>
+        <nav class="site-nav">
+        <ul class="nav-links">
+            <li><a href="resume.html">Résumé</a></li>
+            <li><a href="cover-letter.html">Cover Letter</a></li>
+            <li><a href="career-goals.html" class="active">Career Goals</a></li>
+        </ul>
+    </nav>
+    </header>
+    <hr />
+    <main>
+        <section class="pic-class">
+        <figure>
+            <img class="pic-image" src="images/tina.jpg" alt="Portrait Tina Konopko" width="320">
+            <figcaption class="pic-capt">Always learning and building</figcaption>
+            <audio controls class="mp3">
+                <source src="media/D276.mp3" type="audio/mp3">Your browser does not support the audio element.
+            </audio>
+        </figure>
+        </section>
+        <hr>
+        <section class="video">
+        <video controls width="600">
+            <source src="media/My-Project-Showcase.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </section>
+        <hr />
+        <section>
+            <h2>Contact Me</h2>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="post" class="contact">
+        <div class="row">
+          <label for="firstName">First name</label>
+          <input id="firstName" name="firstName" type="text" required />
+        </div>
+
+        <div class="row">
+          <label for="lastName">Last name</label>
+          <input id="lastName" name="lastName" type="text" required />
+        </div>
+
+        <div class="row">
+          <label for="company">Company name</label>
+          <input id="company" name="company" type="text" />
+        </div>
+
+        <div class="row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="row">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" />
+        </div>
+
+                <div class="row">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <fieldset class="row">
+                <legend>Best contact time</legend>
+                <label><input type="radio" name="bestTime" value="am" /> a.m.</label>
+                <label><input type="radio" name="bestTime" value="pm" /> p.m.</label>
+                <label><input type="radio" name="bestTime" value="anytime" checked /> anytime</label>
+                </fieldset>
+
+                <div class="row">
+                <label for="contactMethod">Preferred contact method</label>
+                <select id="contactMethod" name="contactMethod">
+                    <option value="phone">phone</option>
+                    <option value="email">email</option>
+                    <option value="text">text</option>
+                </select>
+                </div>
+
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer">
+    <hr />
+    <p class="tiny">© <span id="year"></span> Tina Konopko</p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
